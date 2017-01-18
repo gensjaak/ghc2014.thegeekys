@@ -1,0 +1,21 @@
+﻿Conditions/Prereqs to move a svc(Street View Car) starting at a determinated junction :
+	What are the can-take streets ? --- got list of can-take streets (a function AAAA)
+	In those can-take streets, which ones are in $this svc's time ? --- got list (a function BBBB)
+	In those, which one is most long in meters ? (a function CCCC)
+
+		then move $this svc to junction the other side of that street (a function DDDD)
+			then $this svc has its junctionsVisited increment by 1
+			then the dest junction will be added to $this svc's junctions list
+			then that street will be added to $this svc's streets list
+
+
+
+For others svc moving, we will verify if another svc of the fleet hasn't use the street on which they will move on. (a function in a loop ZZZZ)
+
+that's it.
+
+* input data already by @phareal
+* @res write function AAAA
+* @bonboy BBBB && CCCC
+* @rajkat DDDD
+* @phareal ZZZZ
